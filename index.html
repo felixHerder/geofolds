@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/icon_font.css" />
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
-    <title>Geotours | Amazing Stuff, No Really</title>
+    <title>Geofolds | Amazing Stuff, No Really</title>
   </head>
 
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="header__logo-box">
         <img class="header__logo" src="./img/logo_outline_white.svg" width="96" height="96" alt="Logo " />
@@ -21,18 +26,25 @@
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Manifolds</span>
-          <span class="heading-primary--sub">is where space unfolds</span>
+          <span class="heading-primary--sub">where space tessellates</span>
         </h1>
         <a href="#" class="btn btn--white btn--animated">Discover Mandelbrots</a>
       </div>
     </header>
-
     <main>
+      <!-- ABOUT -->
       <div class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Polymorphous shapes for topological tastes</h2>
         </div>
         <div class="row">
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img src="img/about01.jpg" alt="Photo 1" class="composition__photo composition__photo--p1" />
+              <img src="img/about02.jpg" alt="Phot 2" class="composition__photo composition__photo--p2" />
+              <img src="img/about03.jpg" alt="Photo 3" class="composition__photo composition__photo--p3" />
+            </div>
+          </div>
           <div class="col-1-of-2">
             <h3 class="heading-tertiary u-margin-bottom-small">Infer discreet gaussian distributions with ease</h3>
             <p class="paragraph">
@@ -42,9 +54,49 @@
             <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aspernatur quod distinctio?</p>
             <a href="#" class="btn-text">Learn more &rarr;</a>
           </div>
-          <div class="col-1-of-2">Image Composition</div>
         </div>
       </div>
+      <!-- FEATURES -->
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-helm"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Distribute derivates</h3>
+              <p class="feature-box__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nisi soluta libero, assumenda commodi obcaecati maxime!
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-target"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Analytical inference</h3>
+              <p class="feature-box__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nisi soluta libero, assumenda commodi obcaecati maxime!
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-server2"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Fold Collapse</h3>
+              <p class="feature-box__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nisi soluta libero, assumenda commodi obcaecati maxime!
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-mixer2"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Fractal probabilities</h3>
+              <p class="feature-box__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nisi soluta libero, assumenda commodi obcaecati maxime!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- <section class="grid-test">
