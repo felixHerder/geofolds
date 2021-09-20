@@ -9,6 +9,8 @@
     transition: all 0.1s ease-out;
     position: relative;
     font-size: $default-font-size;
+    line-height: 1;
+    padding: 2.5rem 4rem;
   }
   &:hover {
     transform: translatey(-0.3rem);
@@ -25,9 +27,15 @@
   &--white {
     background-color: $color-white;
     color: $color-grey-dark;
-    padding: 1.5rem 4rem;
     &::after {
       background-color: $color-white;
+    }
+  }
+  &--red {
+    background-color: $color-primary;
+    color: $color-white;
+    &::after {
+      background-color: $color-primary;
     }
   }
   &::after {

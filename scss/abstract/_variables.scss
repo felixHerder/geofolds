@@ -1,9 +1,16 @@
 // COLORS
-$color-primary-light: #ff4d6d;
-$color-primary: #c9184a;
-$color-primary-dark: #a4133c;
+$color-primary: hsl(343, 79%, 44%);
+$color-primary-light: hsl(349, 100%, 65%);
+$color-primary-dark: hsl(343, 79%, 36%);
+
+$color-secondary-light: hsl(280, 100%, 65%);
+$color-secondary-dark: hsl(290, 79%, 36%);
+
+$color-tertiary-light: hsl(20, 100%, 65%);
+$color-tertiary-dark: hsl(30, 79%, 36%);
 
 $color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
 $color-grey-dark: #666;
 $color-white: #fff;
 $color-black: #000;
