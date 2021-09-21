@@ -94,7 +94,7 @@ body {
   transition: all 0.2s;
 }
 .heading-secondary:hover {
-  transform: rotateY(20deg) scale(1.2);
+  transform: rotateY(20deg) scale(1.1);
   text-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.1);
 }
 
@@ -197,6 +197,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #c9184a;
   padding: 3px 9px;
+  padding-top: 6px;
   font-weight: 700;
   font-size: 1.6rem;
   transition: all 0.2s;
@@ -403,6 +404,7 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 .story > * {
   transform: skewX(12deg);
@@ -416,10 +418,54 @@ body {
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   transform: translateX(-3rem);
+  position: relative;
 }
 .story__img {
   height: 100%;
+  transform: scale(1.2);
+  transition: all 0.2s;
+  filter: blur(0px);
 }
+.story__text {
+  font-size: 1.6rem;
+}
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  opacity: 0;
+  transition: transform 0.2s;
+}
+.story:hover .story__caption {
+  opacity: 1;
+  transform: translate(-50%, -40%);
+}
+.story:hover .story__img {
+  transform: scale(1);
+  filter: blur(2px) brightness(70%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(255, 77, 109, 0.8), rgba(164, 19, 60, 0.8)), url("../img/hero01.jpg");
@@ -509,5 +555,5 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background-color: #f7f7f7;
+  position: relative;
 }
