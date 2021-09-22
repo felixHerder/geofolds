@@ -10,15 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/icon_font.css" />
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
     <title>Geofolds | Amazing Stuff, No Really</title>
   </head>
   <body>
+    <!-- NAV -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navigation__button"><span class="navigation__icon"></span></label>
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#section-about" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="#section-features" class="navigation__link">Features</a></li>
+          <li class="navigation__item"><a href="#section-folds" class="navigation__link">Folds</a></li>
+          <li class="navigation__item"><a href="#section-stories" class="navigation__link">Plotting</a></li>
+          <li class="navigation__item"><a href="#section-subscribe" class="navigation__link">Compute Now</a></li>
+        </ul>
+      </nav>
+    </div>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__logo-box">
         <img class="header__logo" src="./img/logo_outline_white.svg" width="96" height="96" alt="Logo " />
       </div>
@@ -27,12 +42,12 @@
           <span class="heading-primary--main">Manifolds</span>
           <span class="heading-primary--sub">where space tessellates</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover Mandelbrots</a>
+        <a href="#section-folds" class="btn btn--white btn--animated">Discover Mandelbrots</a>
       </div>
     </header>
     <main>
       <!-- ABOUT -->
-      <section class="section-about">
+      <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Polymorphous shapes for topological tastes</h2>
         </div>
@@ -56,7 +71,7 @@
         </div>
       </section>
       <!-- FEATURES -->
-      <section class="section-features">
+      <section class="section-features" id="section-features">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -98,7 +113,7 @@
       </section>
     </main>
     <!-- FOLDS -->
-    <section class="section-folds">
+    <section class="section-folds" id="section-folds">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Mandelbrot Fractal Sets</h2>
       </div>
@@ -126,7 +141,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">Ξ0.89</p>
                 </div>
-                <a href="#" class="btn btn--white">Dock Now!</a>
+                <a href="#modal" class="btn btn--white">Dock Now!</a>
               </div>
             </div>
           </div>
@@ -154,7 +169,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">Ξ1.49</p>
                 </div>
-                <a href="#" class="btn btn--white">Dock Now!</a>
+                <a href="#modal" class="btn btn--white">Dock Now!</a>
               </div>
             </div>
           </div>
@@ -182,7 +197,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">Ξ1.99</p>
                 </div>
-                <a href="#" class="btn btn--white">Dock Now!</a>
+                <a href="#modal" class="btn btn--white">Dock Now!</a>
               </div>
             </div>
           </div>
@@ -194,7 +209,7 @@
       </div>
     </section>
     <!-- STORIES -->
-    <section class="section-stories">
+    <section class="section-stories" id="section-stories">
       <div class="bg-video">
         <video class="bg-video__content" autoplay muted loop>
           <source src="img/video.mp4" type="video/mp4" />
@@ -244,7 +259,7 @@
       </div>
     </section>
     <!-- SUBSCRIBE -->
-    <section id="subscribe" class="section-subscribe">
+    <section id="section-subscribe" class="section-subscribe">
       <div class="row">
         <div class="subscribe">
           <div class="subscribe__form">
@@ -284,6 +299,7 @@
         </div>
       </div>
     </section>
+    <!-- FOOTER -->
     <footer id="footer" class="footer">
       <div class="footer__logo-box">
         <img class="footer__logo" src="img/geofolds_logo_outline_red.png" alt="footer logo" />
@@ -302,20 +318,51 @@
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Built by <a href="https://felixherder.space" class="footer__link">Felix Baciu</a> with Sass.
-            
-            Images from <a href="https://www.unsplash.com" class="footer__link">www.unsplash.com</a>. Icons from <a class="footer__link"  href="https://www.flaticon.com/" title="Flaticon" >www.flaticon.com</a>.
+            Built by <a href="https://felixherder.space" class="footer__link">Felix Baciu</a> with Sass. Images from
+            <a href="https://www.unsplash.com" class="footer__link">www.unsplash.com</a>. Icons from
+            <a class="footer__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.
           </p>
         </div>
       </div>
     </footer>
-  </body>
-  <script>
-    setTimeout(() => {
-      let section = document.querySelector(window.location.hash);
-      if (section) {
-        document.documentElement.scrollTop = section.offsetTop;
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <div class="modal__left">
+          <img src="img/story01.jpg" alt="modal img" class="modal__img" />
+          <img src="img/story04.jpg" alt="modal img" class="modal__img" />
+        </div>
+        <div class="modal__right">
+          <a href="#section-folds" class="modal__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">Start Docking Now</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Lorem ipsum dolor, sit amet consectetur elit.</h3>
+          <p class="modal__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, optio unde, quam laborum perspiciatis animi dolorum ab corporis omnis labore
+            autem? Harum omnis, accusantium explicabo impedit tempore sequi soluta delectus necessitatibus mollitia et laudantium earum voluptas iure tempora
+            quibusdam ex ipsa consequuntur beatae? Odio, dolores rerum, saepe debitis praesentium iusto dolor officiis error totam tenetur consequatur, fugit
+            ipsa rem harum ducimus quo dicta?
+          </p>
+          <a href="#" class="btn btn--red">Dock Now</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      if (window.location.hash) {
+        setTimeout(() => {
+          let section = document.querySelector(window.location.hash);
+          if (section) {
+            document.documentElement.scrollTop = section.offsetTop;
+          }
+        }, 500);
       }
-    }, 500);
-  </script>
+      const navLinks = document.querySelectorAll('.navigation__link');
+      const navToggle = document.getElementById('nav-toggle')
+      navLinks.forEach(link => {
+        link.onclick = ()=>{
+          navToggle.checked = false;
+        };
+      });
+    </script>
+  </body>
 </html>

@@ -8,6 +8,7 @@
 html {
   /* 1rem = 10px, 62.5% of 16xp = 10px font size for a 16px default root */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   box-sizing: border-box;
