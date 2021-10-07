@@ -1,13 +1,57 @@
-@mixin cleafix{
-  &:after{
-    content:"";
+@mixin cleafix {
+  &:after {
+    content: "";
     display: table;
     clear: both;
   }
 }
-@mixin absolute-center{
+@mixin absolute-center {
   position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//Media Queries
+/**
+0-600px - phone -xs
+600-900px -tablet -sm
+900-1200px -tablet -md
+1200 - 1800px - desktop -lg
+1800px+  -large desktop -xlg
+**/
+
+// 1em = 16px
+
+@mixin resp($breakpoint) {
+  @if $breakpoint == xs {
+    //600px
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == sm {
+    //900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == md {
+    //1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg {
+    //1800px
+    @media (max-width: 112.5) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    //1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
 }

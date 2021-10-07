@@ -1,3 +1,10 @@
+/**
+0-600px - phone -xs
+600-900px -tablet -sm
+900-1200px -tablet -md
+1200 - 1800px - desktop -lg
+1800px+  -large desktop -xlg
+**/
 *,
 *::after,
 *::before {
@@ -10,6 +17,26 @@ html {
   /* 1rem = 10px, 62.5% of 16xp = 10px font size for a 16px default root */
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 112.5) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -147,7 +174,7 @@ body {
   position: relative;
   font-size: 1.6rem;
   line-height: 1;
-  padding: 2.35rem 4rem 2rem 4rem;
+  padding: 2.4rem 4rem 2rem 4rem;
   font-family: inherit;
   border: none;
   cursor: pointer;
@@ -676,11 +703,12 @@ body {
 }
 .header__logo-box {
   position: absolute;
-  top: 4rem;
-  left: 4rem;
+  top: 6rem;
+  left: 6rem;
 }
 .header__logo {
   height: 6.4rem;
+  width: 6.4rem;
 }
 .header__text-box {
   position: absolute;
@@ -690,6 +718,13 @@ body {
   text-align: center;
 }
 
+/**
+0-600px - phone -xs
+600-900px -tablet -sm
+900-1200px -tablet -md
+1200 - 1800px - desktop -lg
+1800px+  -large desktop -xlg
+**/
 .row {
   max-width: 114rem;
   margin: 0 auto;

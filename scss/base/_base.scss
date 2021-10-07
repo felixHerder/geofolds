@@ -9,6 +9,24 @@ html {
   /* 1rem = 10px, 62.5% of 16xp = 10px font size for a 16px default root */
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include resp(xl) {
+    font-size: 75%; //1rem = 12px  w > 1800
+  }
+  @include resp(lg) {
+    font-size: 62.5%; //1rem =10px w < 1800
+  }
+  @include resp(md) {
+    font-size: 56.25%; //1rem = 9px w < 1200
+  }
+  @include resp(sm) {
+    font-size: 50%; //1rem = 8px w < 900
+  }
+  // @include resp(xs) {
+  //   font-size: 37.5%; //1rem = 6px  w < 600
+  // }
+
+
 }
 body {
   box-sizing: border-box;
