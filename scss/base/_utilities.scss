@@ -3,9 +3,15 @@
 }
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+  @include resp(sm){
+    margin-bottom: 4rem;
+  }
 }
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
+  @include resp(sm){
+    margin-bottom: 3rem;
+  }
 }
 .u-margin-bottom-small {
   margin-bottom: 1rem;
@@ -14,5 +20,5 @@
   margin-bottom: 8rem;
 }
 .u-margin-top-huge {
-  margin-bottom: 10rem;
+  margin-top: 10rem;
 }

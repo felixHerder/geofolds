@@ -10,11 +10,21 @@
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  @include resp(sm) {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+  @include resp(xs) {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  }
   position: relative;
   &__logo-box {
     position: absolute;
     top: 6rem;
     left: 6rem;
+    @include resp(sm) {
+      top: 4rem;
+      left: 4rem;
+    }
   }
   &__logo {
     height: 6.4rem;

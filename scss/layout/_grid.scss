@@ -2,10 +2,17 @@
 @import "../abstract/mixins";
 .row {
   max-width: $grid-width;
-  // padding: 0 4rem;
+  padding: 0 3rem;
+  @include resp(sm){
+    max-width: 50rem;
+  }
+
   margin: 0 auto;
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+    @include resp(sm){
+      margin-bottom:$gutter-vertical-sm;
+    }
   }
   @include cleafix;
   [class^="col-"] {
@@ -13,6 +20,14 @@
     height: fit-content;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+      @include resp(sm){
+        margin-right:0;
+        margin-bottom:$gutter-vertical-sm;
+      }
+    }
+
+    @include resp(sm){
+      width: 100% !important;
     }
   }
   .col-1-of-2 {

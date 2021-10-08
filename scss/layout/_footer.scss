@@ -2,6 +2,9 @@
   background-color: $color-grey-dark-3;
   padding: 5rem 0;
   font-size: 1.4rem;
+  @include resp(sm){
+    padding: 3rem 0;
+  }
 
   &__logo-box {
     text-align: center;
@@ -15,6 +18,10 @@
     border-top: 1px solid $color-grey-light-2;
     padding-top: 2rem;
     width: fit-content;
+    @include resp(sm){
+      width: 100%;
+      text-align: center;
+    }
   }
   &__list {
     list-style: none;
@@ -48,8 +55,15 @@
     padding-top: 2rem;
     width: 93%;
     margin-left:auto;
+    @include resp(sm){
+      text-align: center;
+    }
     .footer__link{
       text-transform: initial;
+    }
+    @include resp(sm){
+      width: 100%;
+      float: none;
     }
   }
 }

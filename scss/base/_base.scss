@@ -25,11 +25,15 @@ html {
   // @include resp(xs) {
   //   font-size: 37.5%; //1rem = 6px  w < 600
   // }
-
-
 }
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  color: $color-grey-dark;
+  line-height: 1.5;
+  // padding: 3rem;
 }

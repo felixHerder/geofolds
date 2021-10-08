@@ -7,16 +7,12 @@
 			<stop stop-color="#a4133c" offset="100%" />
 		</linearGradient>
 		<style>
-
-
-
 			.logoText {
 				font-family: "Josefin Sans";
 				font-size: 80px;
 				font-weight: 400;
 				fill: url(#Gradient1);
 			}
-
 			.path {
 				fill: url(#Gradient1);
 				transform-origin: 256px 0px;
